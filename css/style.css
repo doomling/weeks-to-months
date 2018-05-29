@@ -1,19 +1,23 @@
+html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
+  background-color: #C1839F;
 }
 .hidden {
   display: none;
 }
 .wrapper {
-  width: 100%;
-  height: calc(100vh - 5vh);
+  width: calc 96vh;
+  padding: 0 2vw;
+  height: calc(100vh - 4vh);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #C1839F;
+  position: relative;
 }
 .wrapper .circle {
   width: 150px;
@@ -81,22 +85,74 @@ body {
 .wrapper .input-wrapper input[type=number] {
   -moz-appearance: textfield;
 }
+.wrapper .modal {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 70%;
+  z-index: 3;
+  background-color: #C1839F;
+  border: 3px dotted #944a6b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  flex-direction: column;
+}
+.wrapper .modal span {
+  text-align: center;
+  font-size: 1.5em;
+}
+.wrapper .modal img {
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
 footer {
-  height: 5vh;
-  color: #9E6C83;
+  height: 4vh;
+  background-color: #C1839F;
+  color: #82596C;
   font-size: 0.8em;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 85px;
+  margin: 0;
+}
+footer a,
+footer a:visited {
+  color: #CE51B7;
+}
+footer a:hover {
+  color: #704777;
 }
 footer img {
   position: absolute;
   z-index: 2;
-  top: -60px;
+  top: -56px;
   right: 0;
-  width: 100px;
+  width: 85px;
   height: auto;
   margin: 0;
   transform: rotateY(180deg);
+  pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+  }
+  footer img {
+    pointer-events: auto;
+  }
+  footer span {
+    display: none;
+  }
 }

@@ -72,3 +72,11 @@ $('#button').on('click', function() {
 $('#renew').on('click', function() {
   location.reload();
 })
+
+$('#doomling').on('click', function() {
+  $('#disclaimer').removeClass('hidden').addClass('modal');
+});
+
+$('#close').on('click', function() {
+  $('#disclaimer').addClass('hidden').removeClass('modal');
+})
