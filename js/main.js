@@ -30,7 +30,7 @@ function checkResult(days) {
   } else if ( days >= 245 && days < 273 ) { // 35 a 39
     result = "ocho meses"
     image = 'img/weeks/08.svg';
-  } else if ( days > 273 ) { // 40+
+  } else if ( days > 273 && days < 300) { // 40+
     result = "nueve meses"
     image = 'img/weeks/09.svg';
   } else if ( days > 300 ) { // nope

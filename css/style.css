@@ -82,41 +82,21 @@ body {
   -moz-appearance: textfield;
 }
 footer {
+  height: 5vh;
   color: #9E6C83;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.8em;
-}
-footer div {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 footer img {
-  width: 30px;
+  position: absolute;
+  z-index: 2;
+  top: -60px;
+  right: 0;
+  width: 100px;
   height: auto;
   margin: 0;
+  transform: rotateY(180deg);
 }
-/*.circle {
-  background-color: yellow;
-  width: 400px;
-  height: 400px;
-}
-
-.first-trimester {
-  background-color: peru;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-
-.cone {
-  width: 0;
-  height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 100px solid red;
-  border-radius: 50%;
-}
-*/
