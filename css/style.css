@@ -1,0 +1,122 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+.hidden {
+  display: none;
+}
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 5vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #C1839F;
+}
+.wrapper .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #57A0A8;
+}
+.wrapper .circle img {
+  width: 90px;
+  height: auto;
+}
+.wrapper #res-wrapper {
+  max-width: 70vw;
+  text-align: center;
+}
+.wrapper .text-result {
+  font-size: 3em;
+}
+.wrapper #result {
+  color: white;
+}
+.wrapper .button {
+  width: 200px;
+  height: 45px;
+  border: 2px dotted #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+}
+.wrapper .input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #C1839F;
+}
+.wrapper .input-wrapper span {
+  font-size: 3em;
+}
+.wrapper .input-wrapper input {
+  width: 55px;
+  height: 10vh;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3em;
+  border: none;
+  color: white;
+  text-align: center;
+  background-color: #C1839F;
+  padding: 0 20px;
+}
+.wrapper .input-wrapper input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+.wrapper .input-wrapper input[type=number]::-webkit-outer-spin-button,
+.wrapper .input-wrapper input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.wrapper .input-wrapper input[type=number] {
+  -moz-appearance: textfield;
+}
+footer {
+  color: #9E6C83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  width: 30px;
+  height: auto;
+  margin: 0;
+}
+/*.circle {
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+}
+
+.first-trimester {
+  background-color: peru;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid red;
+  border-radius: 50%;
+}
+*/

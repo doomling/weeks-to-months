@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Embarazo | semanas a meses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle">
+        <img id="icon" src="img/weeks/start.svg">
+      </div>
+      <h1> ¿De cuántos <strong> meses </strong> está? </h1>
+      <div class="input-wrapper" id="input-wrapper">
+        <input type="number" placeholder="0" list="weeks" id="weeks" max="43" min="0" value="">
+        <span> semanas </span>
+        <input type="number" placeholder="0" list="days" id="days" max="6" min="0" value="">
+        <span> días </span>
+      </div>
+      <div class="hidden" id="res-wrapper">Está cursando un embarazo de <span id="result"></span></div>
+      <div id="button" class="button">¡CALCULAR!</div>
+      <div id="renew" class="hidden">¡OTRA VEZ!</div>
+      <!--div id="result"></div-->
+    </div>
+    <footer><div>En esta página creemos que el embarazo debe ser deseado, no una obligación. Por eso bancamos la camapaña por el aborto legal, seguro y gratuito | Made with love by <a href="http://iamdoomling.com" target="_blank"><img src="img/doomling-verde.png"></div></footer>
+    <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
